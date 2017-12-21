@@ -1,0 +1,90 @@
+//
+// button
+//------------------------------------------------------------------------
+
+.btn-00,
+.btn-01,
+.btn-02 {
+  font-size: 28px;
+  line-height: 1.2;
+  vertical-align: top;
+  min-height: 96px;
+  padding: 25px 10px;
+  margin: 0 10px;
+  display: inline-block;
+  -webkit-appearance: none;
+
+  &.tiny {
+    padding: 0 10px;
+    font-size: 24px;
+    min-height: 60px;
+  }
+
+  &.small {
+    padding: 16px 10px;
+    font-size: 24px;
+    min-height: 60px;
+  }
+
+  &.xsmall {
+    padding: 16px 30px;
+    font-size: 24px;
+    min-height: 70px;
+  }
+
+  &.xsmall01 {
+    padding: 30px;
+    font-size: 28px;
+    min-height: 70px;
+    width: 70%;
+  }
+
+  &.xsmall02 {
+    padding: 16px 50px;
+    font-size: 24px;
+    min-height: 70px;
+  }
+
+  &.xsmall03 {
+    padding: 16px 60px;
+    font-size: 24px;
+    min-height: 70px;
+  }
+
+  &.medium {
+    padding: 25px 15px;
+    font-size: 24px;
+    min-height: 76px;
+
+    &.line2 {
+      padding: 11px 10px;
+    }
+  }
+
+  &.large {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.btn-00 {
+  background: $u000;
+  color: #fff;
+  border: 2px solid $u002;
+}
+
+.btn-01 {
+  background: $u002;
+  color: #fff;
+  border: 2px solid $u002;
+}
+
+.btn-02 {
+  background: $u003;
+  color: $u002;
+  border: 2px solid $u004;
+
+  &:hover {
+    color: $u002;
+  }
+}

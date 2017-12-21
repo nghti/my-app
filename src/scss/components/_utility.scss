@@ -1,0 +1,65 @@
+//
+// Utility
+//------------------------------------------------------------------------
+
+ul li {
+  list-style: none;
+}
+/// Class
+.Boxcenter {
+  display: block;
+  margin: 0 auto;
+}
+
+.Boxpa {
+  @include cfx;
+}
+/// Box
+
+.Floatleft {
+  float: left;
+}
+
+.Floatright {
+  float: right;
+}
+
+.Inlineblock {
+  display: inline-block;
+}
+
+/// Text
+.Text--w {
+  font-weight: bold;
+}
+
+.Text--no {
+  font-weight: normal;
+}
+
+.Text--al {
+  vertical-align: middle;
+}
+
+/// border
+.bd0 {
+  border: 0;
+}
+
+.bt1 {
+  border-top: 1px solid #ddd;
+}
+
+.bb1 {
+  border-bottom: 1px solid #ddd;
+}
+
+/// radius
+.rs50 {
+  border-radius: 50%;
+}
+
+/// cursor-pointer
+.Pointer--tr {
+  cursor: pointer;
+}

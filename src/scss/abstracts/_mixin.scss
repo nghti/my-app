@@ -1,0 +1,40 @@
+//
+// mixin
+//------------------------------------------------------------------------
+
+/// @alias element
+@mixin e($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+
+/// @alias modifier
+@mixin m($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
+}
+
+/// Box center
+@mixin ctb {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin cfx {
+  &:before {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+
+  *zoom: 1;
+}

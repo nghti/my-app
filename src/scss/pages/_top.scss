@@ -1,0 +1,57 @@
+//
+// TOP PAGE
+//------------------------------------------------------------------------
+
+body {
+  font-family: $text-font-stack;
+  font-size: 13px;
+  color: #676a6c;
+}
+
+.Container {
+  max-width: 1170px;
+  margin: 0 auto;
+  border: 1px solid $u002;
+}
+
+.wrap {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.Home_lists {
+  display: inline-block;
+  width: calc((100%/4));
+}
+
+.Home_lists img {
+  width: 100%;
+}
+
+.App_menu {
+  display: inline-block;
+
+  li {
+    float: left;
+    list-style: none;
+    margin: 0 40px;
+  }
+}
+
+.Admin {
+  .Admin_table {
+    width: 100%;
+  }
+
+  ul {
+    display: table;
+    width: 100%;
+    text-align: right;
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+    margin: 40px;
+  }
+}

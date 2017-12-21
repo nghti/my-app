@@ -1,0 +1,63 @@
+//
+// variables
+//------------------------------------------------------------------------
+
+/// Regular font family
+/// @type List
+$text-font-stack: 'Noto Sans', sans-serif;
+
+// User
+$text-font:  "Noto Sans Japanese", "Noto Sans", "Avenir Next", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic Pro", "Kozuka Gothic Pro Light", Meiryo, "MS PGothic", sans-serif;
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1000px !default;
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  'small': 320px,
+  'medium': 768px,
+  'large': 1024px,
+) !default;
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '../img' !default;
+
+/// setting color
+$u000: transparent;
+$u001: #fff;
+$u002: #000;
+$u003: #00bcd4;
+$u004: #232733;
+$u005: #51545d;
+$u006: #f44336;
+$u007: #f6f6f6;
+$u008: #ececec;
+$u009: #bfc3c7;
+
+/// rgba
+$rgb001: rgba(0, 0, 0, 0.3);
+$rgb002: rgba(0, 0, 0, 0.7);
+
+/// class color
+.text-red {
+  color: $u006;
+}
+
+.text-green {
+  color: $u003;
+}
+
+/// class bg
+.bg-gray {
+  background-color: $u003;
+}
+
+.bg-white {
+  background-color: $u001;
+}

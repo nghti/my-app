@@ -1,0 +1,78 @@
+//
+// This file contains CSS helper classes.
+//------------------------------------------------------------------------
+
+/* stylelint-disable */
+@for $value from 0 through 20 {
+  /// Margin all
+  .mg#{$value + 0} { margin: 0px + $value !important; }
+
+  /// Padding all
+  .pd#{$value + 0} { padding: 0px + $value !important; }
+}
+/// Margin & Padding +1
+@for $value from 0 through 20 {
+  /// Margin
+  .mt#{$value + 0} { margin-top: 0px + $value !important; }
+  .mr#{$value + 0} { margin-right: 0px + $value !important; }
+  .mb#{$value + 0} { margin-bottom: 0px + $value !important; }
+  .ml#{$value + 0} { margin-left: 0px + $value !important; }
+
+  /// Padding
+  .pt#{$value + 0} { padding-top: 0px + $value !important; }
+  .pr#{$value + 0} { padding-right: 0px + $value !important; }
+  .pb#{$value + 0} { padding-bottom: 0px + $value !important; }
+  .pl#{$value + 0} { padding-left: 0px + $value !important; }
+}
+
+/// Margin & Padding +5
+@for $value from 5 through 20 {
+  /// Margin
+  .mt#{$value * 5} { margin-top: 5px * $value !important; }
+  .mr#{$value * 5} { margin-right: 5px * $value !important; }
+  .mb#{$value * 5} { margin-bottom: 5px * $value !important; }
+  .ml#{$value * 5} { margin-left: 5px * $value !important; }
+
+  /// Padding
+  .pt#{$value * 5} { padding-top: 5px * $value !important; }
+  .pr#{$value * 5} { padding-right: 5px * $value !important; }
+  .pb#{$value * 5} { padding-bottom: 5px * $value !important; }
+  .pl#{$value * 5} { padding-left: 5px * $value !important; }
+}
+
+/// width
+@for $value from 0 through 100 {
+  .wid#{$value} { width: $value + 0% !important; }
+}
+
+@for $value from 0 through 40 {
+  .wid--x#{$value * 5} { width: $value * 5px !important; }
+}
+
+@for $value from 0 through 40 {
+  .wid--mx#{$value * 5} { min-width: $value * 5px !important; }
+}
+
+/// height
+@for $value from 0 through 40 {
+  .hei--x#{$value * 5} { height: $value * 5px !important; }
+}
+
+@for $value from 0 through 40 {
+  .hei--mx#{$value * 5} { min-height: $value * 5px !important; }
+}
+
+/// radius
+@for $value from 0 through 10 {
+  .radius#{$value} { border-radius: $value + px !important; }
+}
+
+/// font size
+@for $value from 8 through 40 {
+  .fs#{$value} { font-size: $value + px !important; }
+}
+
+/// line size
+@for $value from 10 through 50 {
+  .lh#{$value} { line-height: $value + px !important; }
+}
