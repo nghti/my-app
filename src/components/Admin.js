@@ -8,12 +8,12 @@ class Admin extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: []
-    }
+      data: [],
+    };
   }
 
   DelClick(indexItem, index) {
-    const conf = confirm('BAN CO MUON XOA KHONG ?');
+    const conf = window.confirm('BAN CO MUON XOA KHONG ?');
     if (conf) {
       axios
         .delete(`https://599e7957d3276800116b9ceb.mockapi.io/items/${indexItem}`)

@@ -1,13 +1,12 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import { Provider } from 'react-redux'
-import registerServiceWorker from './registerServiceWorker'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import registerServiceWorker from './registerServiceWorker';
+import App from './components/App';
+import './scss/main.scss';
+import configureStore from './store/configureStore';
 
-import configureStore from './store/configureStore'
-const store = configureStore()
-
-import App from './components/App'
-import './scss/main.scss'
+const store = configureStore();
 
 const ReduxApp = () => (
   <Provider store={store}>
