@@ -1,0 +1,30 @@
+//
+// footer
+//------------------------------------------------------------------------
+
+footer {
+  border-top: 1px solid $u002;
+  padding: 6px;
+
+  @include cfx;
+
+  .FooterTwitter {
+    float: left;
+    width: 300px;
+  }
+
+  .FooterInfo {
+    overflow: hidden;
+
+    @include e('logo') {
+      margin-bottom: 20px;
+    }
+
+    @include e('menu') {
+      li {
+        display: inline-block;
+        margin: 10px 40px;
+      }
+    }
+  }
+}

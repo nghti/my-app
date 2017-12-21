@@ -1,0 +1,61 @@
+//
+// popup bootstrap
+//------------------------------------------------------------------------
+
+/// modal All
+.Modalcenter {
+  text-align: center;
+  padding: 0;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
+  }
+
+  .modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+  }
+}
+
+/// box list
+.Listmodal {
+  text-align: center;
+
+  .modal-dialog {
+    width: 400px;
+  }
+
+  .modal-header {
+    border: 0;
+    padding-bottom: 5px;
+    padding-top: 20px;
+
+    .close {
+      margin-top: -15px;
+    }
+  }
+
+  .modal-title {
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .modal-body {
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 4px;
+  }
+
+  .modal-footer {
+    border: 0;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+}
