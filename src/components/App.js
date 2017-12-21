@@ -12,6 +12,7 @@ const App = () => (
   <BrowserRouter>
     <div>
       <Header />
+      <Link to={'/admin'}>Admin</Link>
       <Switch>
         <Route exact path="/" component={Home}/>
         <Route exact path="/admin" component={Admin} />
