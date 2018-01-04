@@ -1,5 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom'
+import Button from 'material-ui/Button';
 
 import Home from './Home'
 import Header from './Header'
@@ -8,11 +9,19 @@ import AddCart from './AddCart'
 import HomeDetail from './HomeDetail'
 import EditCart from './EditCart'
 
+const styles = theme => ({
+  button: {
+    margin: theme.spacing.unit,
+  },
+});
+
 const App = () => (
   <BrowserRouter>
     <div>
       <Header />
-      <Link to={'/admin'}>Admin</Link>
+        <Button raised color="accent">
+          <Link to={'/admin'}>Admin</Link>
+        </Button>
       <Switch>
         <Route exact path="/" component={Home}/>
         <Route exact path="/admin" component={Admin} />
