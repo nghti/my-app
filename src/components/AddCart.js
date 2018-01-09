@@ -1,5 +1,5 @@
-import React from 'react'
-import axios from 'axios'
+import React from 'react';
+import axios from 'axios';
 
 class AddCart extends React.Component {
   constructor(props) {
@@ -39,7 +39,7 @@ class AddCart extends React.Component {
   }
 
   render() {
-    const { id, createdAt, name, imageUrl, email } = this.state;
+    const { createdAt, name, imageUrl, email } = this.state;
     return (
       <div className="AddTodo">
         <br/><br/>

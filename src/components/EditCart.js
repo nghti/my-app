@@ -61,7 +61,7 @@ class EditCart extends React.Component {
   }
 
   render() {
-    const { id, createdAt, name, imageUrl, email } = this.state.data;
+    const { createdAt, name, imageUrl, email } = this.state.data;
     return (
       <div className="EditTodo">
         <br /><br />

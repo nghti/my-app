@@ -26,32 +26,32 @@ const styles = theme => ({
 });
 
 class Home extends React.Component {
-  constructor(props){
-    super(props)
+  constructor(props) {
+    super(props);
     this.state = {
       items: [],
-      isLoading: true
-    }
+      isLoading: true,
+    };
   }
 
   componentDidMount() {
     axios
       .get('https://599e7957d3276800116b9ceb.mockapi.io/items')
-      .then(response => {
+      .then((response) => {
         this.setState({
           items: response.data,
-          isLoading: false
+          isLoading: false,
         });
       })
-      .catch(error => {
+      .catch((error) => {
         console.log(error);
         this.setState({
-          isLoading: false
+          isLoading: false,
         });
       });
   }
 
-  render(){
+  render() {
     const { classes } = this.props;
 
     if (this.state.isLoading) {
@@ -59,10 +59,10 @@ class Home extends React.Component {
         <div>
           <h2>LOADING...</h2>
         </div>
-      )
+      );
     }
 
-    return(
+    return (
       <div>
         <div className={classes.container}>
           <GridList cellHeight={280} className={classes.gridList}>
@@ -78,7 +78,7 @@ class Home extends React.Component {
                   actionIcon={
                     <Link to={'/detail/'+tile.id}>
                     <IconButton>
-                      <InfoIcon color="rgba(255, 255, 255, 0.54)" />
+                      <InfoIcon />
                     </IconButton>
                     </Link>
                   }
@@ -103,7 +103,7 @@ class Home extends React.Component {
           )}
         </div> */}
       </div>
-    )
+    );
   }
 }
 

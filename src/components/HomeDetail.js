@@ -2,7 +2,6 @@ import React from 'react';
 import axios from 'axios';
 import { connect } from 'react-redux';
 import compose from 'recompose/compose';
-import { editTodo } from '../actions';
 import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
 import classnames from 'classnames';

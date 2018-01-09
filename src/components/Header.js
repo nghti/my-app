@@ -21,6 +21,9 @@ const styles = theme => ({
     marginLeft: -12,
     marginRight: 20,
   },
+  linkto: {
+    color: 'white',
+  },
 });
 
 class Header extends React.Component {
@@ -38,7 +41,7 @@ class Header extends React.Component {
             <Typography type="title" color="inherit" className={classes.flex}>
               Shop Management
             </Typography>
-            <Button color="contrast">Login</Button>
+            <Button color="contrast"><Link className={classes.linkto} to={'/admin'}>Admin</Link></Button>
           </Toolbar>
         </AppBar>
       </div>
