@@ -8,6 +8,13 @@ import Typography from 'material-ui/Typography';
 import Button from 'material-ui/Button';
 import IconButton from 'material-ui/IconButton';
 import MenuIcon from 'material-ui-icons/Menu';
+import styled from 'styled-components';
+
+const Button1 = styled.button`
+  background: red;
+  border-radius: 8px;
+  color: white;
+`;
 
 const styles = theme => ({
   root: {
@@ -41,7 +48,7 @@ class Header extends React.Component {
             <Typography type="title" color="inherit" className={classes.flex}>
               Shop Management
             </Typography>
-            <Button color="contrast"><Link className={classes.linkto} to={'/admin'}>Admin</Link></Button>
+            <Button1 color="contrast"><Link className={classes.linkto} to={'/admin'}>Admin</Link></Button1>
           </Toolbar>
         </AppBar>
       </div>
