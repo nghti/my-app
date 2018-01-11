@@ -87,20 +87,30 @@ class Home extends React.Component {
             ))}
           </GridList>
         </div>
-        {/* <div className="Home">
-          <ul className="App_menu">
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/admin">Admin</Link></li>
-          </ul>
-          <h2>Page Home</h2>
-          {this.state.items.map(item =>
-            <div key={item.id} className="Home_lists">
-              <Link to={'/detail/'+item.id}><img src={item.imageUrl} alt=""/></Link>
-              <div>
-                <p>{item.name}</p>
-              </div>
-            </div>
-          )}
+        {/* <div className={classes.container}>
+          <GridList cellHeight={280} className={classes.gridList}>
+            <GridListTile key="Subheader" cols={2} style={{ height: 'auto' }}>
+              <Subheader component="div">Search</Subheader>
+            </GridListTile>
+            {this.state.items.map((tile, index) => (
+              <LazyLoad once={tile.once} key={index} debounce={500} height={200}>
+                <GridListTile once={tile.once} key={tile.id}>
+                  <img src={tile.imageUrl} alt={tile.name} />
+                  <GridListTileBar
+                    title={tile.name}
+                    subtitle={<span>by: {tile.email}</span>}
+                    actionIcon={
+                      <Link to={'/detail/'+tile.id}>
+                      <IconButton>
+                        <InfoIcon />
+                      </IconButton>
+                      </Link>
+                    }
+                  />
+                </GridListTile>
+              </LazyLoad>
+            ))}
+          </GridList>
         </div> */}
       </div>
     );
